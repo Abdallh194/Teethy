@@ -1,0 +1,130 @@
+.Why {
+  .text-box,
+  .img-box {
+    padding: 0;
+  }
+  .content {
+    width: 90%;
+  }
+  color: white;
+  margin-top: 75px;
+  .text-box {
+    background-color: #70bfd7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+  }
+  .head {
+    font-family: $header-font;
+    font-size: 44px;
+    line-height: 1.1;
+    color: black;
+  }
+  .desc-head {
+    font-size: 27px;
+    padding: 25px 0;
+    letter-spacing: 3px;
+  }
+  .desc {
+    color: #000000bd;
+  }
+  .nums {
+    padding: 0px 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 45px;
+    .exp,
+    .stuff,
+    .TPation {
+      position: relative;
+      font-size: 21px;
+    }
+    .cus-line {
+      &::before {
+        position: absolute;
+        height: 100%;
+        width: 3px;
+        content: "";
+        background-color: white;
+        left: -19px;
+      }
+    }
+  }
+  @media (max-width: 1300px) {
+    .head {
+      font-size: 23px;
+    }
+    .desc-head {
+      font-size: 18px;
+      letter-spacing: 2px;
+    }
+    .text-box {
+      padding: 15px;
+    }
+    .nums {
+      .exp,
+      .stuff,
+      .TPation {
+        position: relative;
+        font-size: 14px;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    .head {
+      font-size: 20px;
+    }
+    .desc-head {
+      font-size: 14px;
+      letter-spacing: 0px;
+      padding: 13px 0;
+    }
+    .desc {
+      font-size: 14px;
+    }
+    .nums {
+      .exp,
+      .stuff,
+      .TPation {
+        font-size: 12px;
+      }
+      .cus-line {
+        &::before {
+          left: -7px;
+        }
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .head {
+      font-size: 34px;
+    }
+    .text-box {
+      padding: 40px 15px;
+    }
+    .desc-head {
+      font-size: 20px;
+      letter-spacing: 3px;
+      padding: 28px 0;
+    }
+    .desc {
+      font-size: 16px;
+    }
+    .nums {
+      display: block;
+      .exp,
+      .stuff,
+      .TPation {
+        font-size: 20px;
+        margin-top: 33px;
+      }
+      .cus-line {
+        &::before {
+          left: -20px;
+        }
+      }
+    }
+  }
+}

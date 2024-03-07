@@ -1,0 +1,1295 @@
+@import "bootstrap/dist/css/bootstrap.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: black;
+}
+
+.navbar {
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.Header {
+  padding-top: 15px;
+}
+.Header .logo {
+  position: relative;
+  font-size: 40px;
+}
+.Header .logo .img {
+  width: 130px;
+}
+.Header .logo .head {
+  font-family: "IBM Plex Sans";
+  color: white;
+}
+.Header .logo .sub-head {
+  position: absolute;
+  bottom: 3px;
+  right: -25px;
+  font-family: "Pacifico";
+}
+.Header .menu {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.Header .menu a {
+  color: white;
+  font-size: 20px;
+  margin-left: 50px;
+  text-transform: uppercase;
+}
+.Header .menu .nav-link {
+  position: relative;
+  overflow: hidden;
+}
+.Header .menu .nav-link::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  transition: 0.2s;
+  height: 7px;
+  background-color: white;
+  bottom: -4px;
+  left: -105%;
+}
+.Header .menu .nav-link:hover::before {
+  left: 0%;
+}
+.Header .active {
+  display: inline-block;
+  position: relative;
+}
+.Header .active span {
+  position: relative;
+  z-index: 1;
+}
+.Header .active::before {
+  position: absolute;
+  content: "";
+  background-color: #01d5ed;
+  width: 120px;
+  height: 149px;
+  left: -28px;
+  top: -77px;
+}
+.Header .callUs {
+  font-family: "IBM Plex Sans";
+  text-align: right;
+  font-size: 28px;
+  color: white;
+}
+.Header .callUs .num {
+  color: black;
+  margin-top: -12px;
+}
+@media (max-width: 1200px) {
+  .Header .logo .img {
+    width: 74px;
+  }
+  .Header .logo .head {
+    font-size: 32px;
+  }
+  .Header .logo .sub-head {
+    bottom: -17px;
+    right: -17px;
+    font-size: 32px;
+  }
+  .Header .callUs {
+    font-size: 23px;
+  }
+  .Header .menu a {
+    font-size: 17px;
+  }
+  .Header .menu .active::before {
+    width: 97px;
+    height: 149px;
+    left: -18px;
+    top: -91px;
+  }
+}
+@media (max-width: 900px) {
+  .Header .menu {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .Header .logo .head {
+    position: relative;
+    top: -10px;
+  }
+  .Header .logo .sub-head {
+    bottom: -6px;
+  }
+  .Header .callUs {
+    font-size: 20px;
+  }
+}
+
+.HomePage {
+  height: 100vh;
+  background-color: #70bfd7;
+  position: relative;
+  overflow: hidden;
+}
+.HomePage .container {
+  max-width: 1740px;
+}
+.HomePage .rows {
+  margin-top: 80px;
+}
+.HomePage .rows .lf-box .top-head {
+  font-size: 36px;
+  margin-left: 20px;
+  letter-spacing: 10px;
+}
+.HomePage .rows .lf-box .head {
+  font-family: "IBM Plex Sans";
+  font-size: 210px;
+  line-height: 0.8;
+}
+.HomePage .rows .lf-box .cus-mg {
+  letter-spacing: 38px;
+  font-size: 231px;
+}
+.HomePage .rows .lf-box .btm-head {
+  font-family: "Pacifico";
+  font-size: 120px;
+  color: white;
+  transform: rotate(-19deg);
+  margin-top: -114px;
+  margin-left: 180px;
+}
+.HomePage .rows .lf-box .location {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+.HomePage .rows .lf-box .location .bi {
+  color: white;
+}
+.HomePage .rows .lf-box .location .geo {
+  font-size: 23px;
+  letter-spacing: 5px;
+  margin-left: 7px;
+}
+.HomePage .rows .right-box {
+  position: relative;
+  padding-right: 44px;
+  text-align: right;
+  font-family: "IBM Plex Sans";
+}
+.HomePage .rows .right-box::before {
+  position: absolute;
+  content: "";
+  width: 310px;
+  height: 310px;
+  right: -29%;
+  top: -12%;
+  background-color: #01d5ed;
+  border-radius: 50%;
+  z-index: 0;
+}
+.HomePage .rows .right-box .line {
+  width: 57%;
+  height: 3px;
+  position: relative;
+  right: -43%;
+  margin: 18px 0;
+  background-color: black;
+}
+.HomePage .rows .right-box .top-head {
+  position: relative;
+  z-index: 0;
+  line-height: 1.1;
+}
+.HomePage .rows .right-box .st {
+  font-size: 40px;
+}
+.HomePage .rows .right-box .sec {
+  font-size: 78px;
+}
+.HomePage .rows .right-box .head {
+  font-size: 150px;
+  line-height: 0.9;
+  color: white;
+  position: relative;
+}
+.HomePage .rows .right-box .cus-mg {
+  letter-spacing: 16px;
+}
+.HomePage .rows .right-box .socials {
+  margin-top: 65px;
+}
+.HomePage .rows .right-box .socials i {
+  font-size: 25px;
+  color: white;
+  display: inline-block;
+  margin-left: 29px;
+}
+.HomePage .rows .right-box .socials .desc {
+  font-size: 24px;
+  font-family: "Montserrat";
+}
+.HomePage .rows .center-box {
+  position: relative;
+}
+.HomePage .rows .center-box .circle {
+  position: absolute;
+  content: "";
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: white;
+  z-index: 0;
+}
+.HomePage .rows .center-box img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: 10px auto;
+  margin-top: -45px;
+}
+@media (max-width: 1650px) {
+  .HomePage .rows .lf-box .head {
+    font-size: 150px;
+  }
+  .HomePage .rows .lf-box .btm-head {
+    font-size: 100px;
+    margin-top: -57px;
+    margin-left: 104px;
+  }
+  .HomePage .rows .lf-box .top-head {
+    font-size: 27px;
+    letter-spacing: 6px;
+  }
+  .HomePage .rows .lf-box .location .geo {
+    font-size: 19px;
+    letter-spacing: 1px;
+    margin-left: 7px;
+  }
+  .HomePage .rows .lf-box .cus-mg {
+    letter-spacing: 38px;
+  }
+  .HomePage .rows .center-box .circle {
+    width: 400px;
+    height: 400px;
+  }
+  .HomePage .rows .center-box img {
+    width: 90%;
+  }
+  .HomePage .rows .right-box .head {
+    font-size: 130px;
+  }
+  .HomePage .rows .right-box .sec {
+    font-size: 70px;
+  }
+  .HomePage .rows .right-box .line {
+    width: 78%;
+    right: -21%;
+  }
+}
+@media (max-width: 1200px) {
+  .HomePage .rows .lf-box .head {
+    font-size: 107px;
+  }
+  .HomePage .rows .lf-box .btm-head {
+    font-size: 59px;
+    margin-top: -44px;
+    margin-left: 116px;
+  }
+  .HomePage .rows .lf-box .cus-mg {
+    letter-spacing: 23px;
+  }
+  .HomePage .rows .lf-box .top-head {
+    font-size: 17px;
+  }
+  .HomePage .rows .lf-box .location .geo {
+    font-size: 15px;
+    letter-spacing: 0px;
+  }
+  .HomePage .rows .lf-box .location .bi {
+    width: 27px;
+  }
+  .HomePage .rows .right-box {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+  }
+  .HomePage .rows .right-box .st {
+    font-size: 23px;
+  }
+  .HomePage .rows .right-box .sec {
+    font-size: 40px;
+  }
+  .HomePage .rows .right-box .head {
+    font-size: 96px;
+  }
+  .HomePage .rows .right-box .line {
+    width: 71%;
+    right: -28%;
+  }
+  .HomePage .rows .right-box .cus-mg {
+    letter-spacing: 11px;
+  }
+  .HomePage .rows .right-box .socials {
+    margin-top: 40px;
+  }
+  .HomePage .rows .right-box .socials .desc {
+    font-size: 17px;
+  }
+  .HomePage .rows .right-box .socials i {
+    font-size: 19px;
+  }
+  .HomePage .rows .center-box .circle {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media (max-width: 920px) {
+  .HomePage .rows .lf-box .head {
+    font-size: 82px;
+  }
+  .HomePage .rows .lf-box .btm-head {
+    font-size: 45px;
+    margin-top: -33px;
+    margin-left: 90px;
+  }
+  .HomePage .rows .lf-box .cus-mg {
+    letter-spacing: 18px;
+  }
+  .HomePage .rows .center-box .circle {
+    width: 300px;
+    height: 300px;
+  }
+  .HomePage .rows .right-box .head {
+    font-size: 76px;
+  }
+  .HomePage .rows .right-box .cus-mg {
+    letter-spacing: 8px;
+  }
+  .HomePage .rows .right-box::before {
+    width: 220px;
+    height: 220px;
+    top: -16%;
+  }
+}
+@media (max-width: 767px) {
+  .HomePage {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .HomePage .rows {
+    text-align: center;
+    margin-top: 57px;
+  }
+  .HomePage .rows .lf-box .head {
+    font-size: 160px;
+  }
+  .HomePage .rows .lf-box .btm-head {
+    font-size: 68px;
+    margin-top: -46px;
+    margin-left: 144px;
+  }
+  .HomePage .rows .lf-box .location {
+    display: none;
+  }
+  .HomePage .rows .center-box img {
+    width: 60%;
+    margin-top: 30px;
+  }
+  .HomePage .rows .center-box .circle {
+    width: 350px;
+    height: 350px;
+    top: 57%;
+  }
+  .HomePage .rows .right-box {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .HomePage .rows .right-box .st {
+    font-size: 28px;
+  }
+  .HomePage .rows .right-box .sec {
+    font-size: 57px;
+  }
+  .HomePage .rows .right-box .head {
+    font-size: 155px;
+  }
+  .HomePage .rows .right-box .top-head {
+    width: 53%;
+    margin: 10px auto;
+    text-align: right;
+  }
+  .HomePage .rows .right-box .line {
+    width: 100%;
+    right: 0;
+  }
+  .HomePage .rows .right-box::before {
+    width: 350px;
+    height: 350px;
+    top: -5%;
+  }
+  .HomePage .rows .right-box .socials {
+    margin-bottom: 15px;
+  }
+  .HomePage .rows .right-box .socials i {
+    font-size: 28px;
+  }
+  .HomePage .rows .right-box .socials .desc {
+    font-size: 22px;
+  }
+}
+
+.About {
+  padding: 40px 0;
+  margin-top: 90px;
+  text-align: center;
+  position: relative;
+}
+.About .container {
+  max-width: 1690px;
+}
+.About .text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.About .head {
+  font-size: 50px;
+  letter-spacing: 8px;
+}
+.About .name {
+  font-size: 73px;
+  letter-spacing: 6px;
+  font-family: "IBM Plex Sans";
+  color: #01d5ed;
+}
+.About .desc {
+  width: 80%;
+  margin: 15px auto;
+}
+.About .booking {
+  background-color: #01d5ed;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  color: white;
+  margin: 15px auto;
+  font-size: 23px;
+  border-radius: 5px;
+  transition: 0.3s;
+  border: 1px solid #01d5ed;
+}
+.About .booking:hover {
+  background-color: transparent;
+  color: #01d5ed;
+}
+.About .img-box {
+  position: relative;
+}
+.About .img-box img {
+  display: block;
+  position: relative;
+  margin: 10px auto;
+  z-index: 1;
+  width: 48%;
+}
+.About .img-box .circles {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.About .img-box .circles .cr1,
+.About .img-box .circles .cr2,
+.About .img-box .circles .cr3 {
+  position: absolute;
+  border-radius: 50%;
+}
+.About .img-box .circles .cr1 {
+  background-color: #01d5ed;
+  width: 700px;
+  height: 700px;
+  z-index: -3;
+}
+.About .img-box .circles .cr2 {
+  background-color: #009fb1;
+  width: 550px;
+  height: 550px;
+  z-index: -2;
+  top: 75px;
+  left: 75px;
+}
+.About .img-box .circles .cr3 {
+  background-color: #00393f;
+  width: 450px;
+  height: 450px;
+  top: 125px;
+  left: 125px;
+}
+@media (max-width: 1450px) {
+  .About .name {
+    font-size: 68px;
+    letter-spacing: 2px;
+  }
+  .About .desc {
+    width: 100%;
+  }
+  .About .img-box img {
+    width: 54%;
+  }
+  .About .img-box .circles {
+    width: 600px;
+    height: 600px;
+  }
+  .About .img-box .circles .cr1 {
+    width: 600px;
+    height: 600px;
+  }
+  .About .img-box .circles .cr2 {
+    width: 450px;
+    height: 450px;
+  }
+  .About .img-box .circles .cr3 {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media (max-width: 1200px) {
+  .About .img-box .circles {
+    width: 450px;
+    height: 450px;
+  }
+  .About .img-box .circles .cr1 {
+    width: 450px;
+    height: 450px;
+  }
+  .About .img-box .circles .cr2 {
+    width: 300px;
+    height: 300px;
+  }
+  .About .img-box .circles .cr3 {
+    width: 200px;
+    height: 200px;
+  }
+  .About .name {
+    font-size: 52px;
+    letter-spacing: 3px;
+  }
+  .About .head {
+    font-size: 42px;
+    letter-spacing: 7px;
+  }
+}
+@media (max-width: 920px) {
+  .About {
+    margin-top: 0;
+  }
+  .About .img-box .circles {
+    width: 350px;
+    height: 350px;
+  }
+  .About .img-box .circles .cr1 {
+    width: 350px;
+    height: 350px;
+  }
+  .About .img-box .circles .cr2 {
+    width: 250px;
+    height: 250px;
+    top: 50px;
+    left: 50px;
+  }
+  .About .img-box .circles .cr3 {
+    width: 200px;
+    height: 200px;
+    top: 75px;
+    left: 75px;
+  }
+  .About .name {
+    font-size: 39px;
+    letter-spacing: 2px;
+  }
+  .About .head {
+    font-size: 26px;
+  }
+  .About .desc {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .About .name {
+    font-size: 44px;
+  }
+  .About .img-box {
+    margin-top: 30px;
+  }
+  .About .img-box .circles {
+    height: 400px;
+    width: 400px;
+  }
+  .About .img-box .circles .cr1 {
+    height: 400px;
+    width: 400px;
+  }
+  .About .img-box .circles .cr2 {
+    height: 300px;
+    width: 300px;
+  }
+  .About .img-box .circles .cr3 {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+.Why {
+  color: white;
+  margin-top: 75px;
+}
+.Why .text-box,
+.Why .img-box {
+  padding: 0;
+}
+.Why .content {
+  width: 90%;
+}
+.Why .text-box {
+  background-color: #70bfd7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+.Why .head {
+  font-family: "IBM Plex Sans";
+  font-size: 44px;
+  line-height: 1.1;
+  color: black;
+}
+.Why .desc-head {
+  font-size: 27px;
+  padding: 25px 0;
+  letter-spacing: 3px;
+}
+.Why .desc {
+  color: rgba(0, 0, 0, 0.7411764706);
+}
+.Why .nums {
+  padding: 0px 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 45px;
+}
+.Why .nums .exp,
+.Why .nums .stuff,
+.Why .nums .TPation {
+  position: relative;
+  font-size: 21px;
+}
+.Why .nums .cus-line::before {
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  content: "";
+  background-color: white;
+  left: -19px;
+}
+@media (max-width: 1300px) {
+  .Why .head {
+    font-size: 23px;
+  }
+  .Why .desc-head {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  .Why .text-box {
+    padding: 15px;
+  }
+  .Why .nums .exp,
+  .Why .nums .stuff,
+  .Why .nums .TPation {
+    position: relative;
+    font-size: 14px;
+  }
+}
+@media (max-width: 992px) {
+  .Why .head {
+    font-size: 20px;
+  }
+  .Why .desc-head {
+    font-size: 14px;
+    letter-spacing: 0px;
+    padding: 13px 0;
+  }
+  .Why .desc {
+    font-size: 14px;
+  }
+  .Why .nums .exp,
+  .Why .nums .stuff,
+  .Why .nums .TPation {
+    font-size: 12px;
+  }
+  .Why .nums .cus-line::before {
+    left: -7px;
+  }
+}
+@media (max-width: 767px) {
+  .Why .head {
+    font-size: 34px;
+  }
+  .Why .text-box {
+    padding: 40px 15px;
+  }
+  .Why .desc-head {
+    font-size: 20px;
+    letter-spacing: 3px;
+    padding: 28px 0;
+  }
+  .Why .desc {
+    font-size: 16px;
+  }
+  .Why .nums {
+    display: block;
+  }
+  .Why .nums .exp,
+  .Why .nums .stuff,
+  .Why .nums .TPation {
+    font-size: 20px;
+    margin-top: 33px;
+  }
+  .Why .nums .cus-line::before {
+    left: -20px;
+  }
+}
+
+.Services {
+  padding: 50px 0;
+  margin-top: 70px;
+}
+.Services .serv-box {
+  background-color: #eff5ff;
+  margin: 10px auto;
+  width: calc(33.3333333333% - 20px);
+  border-radius: 5px;
+  padding: 40px;
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.35s;
+}
+.Services .serv-box .head {
+  font-size: 26px;
+  padding: 10px 0;
+  letter-spacing: 1px;
+}
+.Services .serv-box i {
+  font-size: 33px;
+  color: #01d5ed;
+}
+.Services .serv-box .desc {
+  color: rgba(0, 0, 0, 0.5411764706);
+}
+.Services .serv-box .more {
+  font-family: "IBM Plex Sans";
+  width: 40px;
+  height: 40px;
+  padding: 0.375rem 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+.Services .serv-box .more .plus {
+  margin-right: 1rem !important;
+  font-size: 27px;
+  color: #01d5ed;
+}
+.Services .serv-box:hover {
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
+  transform: translateY(-10px);
+}
+.Services .serv-box:hover .more {
+  width: 140px;
+}
+.Services .header {
+  font-size: 37px;
+  letter-spacing: 6px;
+  text-align: center;
+  margin: 20px 0;
+}
+@media (max-width: 992px) {
+  .Services .serv-box {
+    width: calc(50% - 20px);
+  }
+}
+@media (max-width: 767px) {
+  .Services {
+    margin-top: 0;
+  }
+  .Services .serv-box {
+    width: calc(100% - 40px);
+  }
+  .Services .header {
+    font-size: 25px;
+    letter-spacing: 3px;
+  }
+}
+
+.Doctors {
+  padding: 40px 0;
+  margin-top: 50px;
+}
+.Doctors .header {
+  font-size: 37px;
+  letter-spacing: 6px;
+  text-align: center;
+  margin: 20px 0;
+}
+.Doctors .doc-box {
+  width: calc(25% - 20px);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 0;
+  margin: 10px auto;
+  transition: 0.5s;
+}
+.Doctors .doc-box img {
+  display: block;
+  transition: 0.5s;
+  position: relative;
+  top: 0;
+}
+.Doctors .doc-box .details {
+  background-color: #eff5ff;
+  text-align: center;
+  padding: 30px;
+  transition: 0.5s;
+  height: 100px;
+  position: relative;
+  z-index: 1;
+}
+.Doctors .doc-box .details .socials {
+  margin-top: 10px;
+}
+.Doctors .doc-box .details i {
+  text-align: center;
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+.Doctors .doc-box .details .name {
+  font-family: "IBM Plex Sans";
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+}
+.Doctors .doc-box .details .dep {
+  color: #01d5ed;
+  padding: 5px 0;
+}
+.Doctors .doc-box:hover img {
+  transform: translateY(-20px);
+}
+.Doctors .doc-box:hover .details {
+  margin-top: -60px;
+  height: 160px;
+}
+@media (max-width: 992px) {
+  .Doctors .doc-box {
+    width: calc(50% - 20px);
+  }
+}
+@media (max-width: 767px) {
+  .Doctors {
+    margin-top: 0;
+  }
+  .Doctors .doc-box {
+    width: calc(100% - 40px);
+  }
+  .Doctors .header {
+    font-size: 25px;
+    letter-spacing: 3px;
+  }
+}
+
+.Contact {
+  background-color: #70bfd7;
+  padding: 70px 0;
+}
+.Contact .cont-box,
+.Contact .form-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Contact .head {
+  font-size: 2.5rem;
+  font-family: "IBM Plex Sans";
+}
+.Contact .desc {
+  padding: 15px 0;
+  color: rgba(27, 44, 81, 0.6117647059);
+}
+.Contact .call,
+.Contact .mail {
+  display: flex;
+  align-items: center;
+  background-color: #eff5ff;
+  padding: 40px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.Contact .call i,
+.Contact .mail i {
+  font-size: 24px;
+  color: #01d5ed;
+}
+.Contact .call .hd,
+.Contact .mail .hd {
+  margin-left: 15px;
+}
+.Contact .call .txt,
+.Contact .mail .txt {
+  color: rgba(27, 44, 81, 0.6078431373);
+}
+.Contact .call .num,
+.Contact .mail .num {
+  padding: 4px 0;
+  font-size: 20px;
+  font-family: "IBM Plex Sans";
+}
+.Contact #txt {
+  resize: none;
+  height: 150px;
+  margin: 20px 0;
+}
+.Contact .hf-width {
+  width: 50%;
+  margin: 10px auto;
+  display: inline-block;
+}
+.Contact #txt,
+.Contact #submit,
+.Contact #select {
+  width: 98%;
+}
+.Contact input {
+  width: 96%;
+  height: 52px;
+  -webkit-appearance: auto;
+     -moz-appearance: auto;
+          appearance: auto;
+}
+.Contact #select {
+  height: 52px;
+  margin: 10px 0;
+}
+.Contact #submit {
+  background-color: #01d5ed;
+  border-color: transparent;
+  color: white;
+  font-size: 19px;
+  text-align: center;
+  padding: 10px 0;
+}
+@media (max-width: 992px) {
+  .Contact .head {
+    font-size: 2rem;
+  }
+  .Contact .call,
+  .Contact .mail {
+    padding: 20px;
+  }
+  .Contact .call .num,
+  .Contact .mail .num {
+    font-size: 16px;
+  }
+}
+@media (max-width: 757px) {
+  .Contact {
+    padding: 25px 0;
+  }
+  .Contact .hf-width {
+    width: 100%;
+  }
+  .Contact form {
+    margin-top: 20px;
+  }
+  .Contact input,
+  .Contact #select,
+  .Contact #txt {
+    width: 100%;
+  }
+  .Contact .call .num,
+  .Contact .mail .num {
+    font-size: 18px;
+  }
+}
+
+.Footer {
+  background-color: #70bfd7;
+  color: white;
+  padding: 40px 0 15px 0;
+}
+.Footer .head {
+  font-family: "IBM Plex Sans";
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.Footer .icon {
+  margin: 10px 0;
+  display: flex;
+}
+.Footer .icon .details {
+  margin-left: 10px;
+}
+.Footer .socials {
+  display: flex;
+}
+.Footer .socials i {
+  width: 40px;
+  height: 40px;
+  border: 1px solid;
+  text-align: center;
+  font-size: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 13px;
+  transition: 0.3s;
+}
+.Footer .socials i:hover {
+  background-color: white;
+  color: #01d5ed;
+}
+.Footer ul {
+  margin-left: -14px;
+}
+.Footer ul li {
+  padding: 2px 0px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.Footer ul li:hover {
+  letter-spacing: 1px;
+  color: black;
+}
+.Footer .inputs {
+  position: relative;
+  margin-top: 20px;
+}
+.Footer .inputs .form-control {
+  height: 60px;
+}
+.Footer .inputs button {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  height: 42px;
+}
+.Footer i {
+  color: white;
+}
+.Footer .copy {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .Footer .foot-box {
+    margin: 20px 0;
+  }
+  .Footer .copy {
+    text-align: center;
+    line-height: 2;
+    display: block;
+  }
+}
+
+.Booking {
+  height: 100vh;
+  background: url("Styles/img/home-bg.jpg");
+  background-size: cover;
+  position: relative;
+}
+.Booking .overlay {
+  position: absolute;
+  background-color: rgba(0, 195, 255, 0.4);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.Booking .head {
+  color: white;
+  text-align: center;
+  margin-top: 150px;
+  font-size: 104px;
+  letter-spacing: 15px;
+  font-family: "IBM Plex Sans";
+}
+.Booking .desc {
+  text-align: center;
+  font-size: 20px;
+  margin-top: -19px;
+  letter-spacing: 2px;
+  color: white;
+}
+.Booking form {
+  background-color: rgba(255, 255, 255, 0.397);
+  padding: 20px;
+  margin-top: 40px;
+}
+.Booking form .header {
+  color: white;
+  text-align: center;
+  font-size: 23px;
+  letter-spacing: 2px;
+}
+.Booking form .form-control,
+.Booking form select {
+  display: inline-block;
+  width: 30%;
+  margin: 20px;
+  height: 50px;
+  border-radius: 0px;
+}
+.Booking form #submit {
+  width: 300px;
+  display: block;
+  height: 55px;
+  margin: 20px auto;
+  color: white;
+  font-size: 24px;
+  border-radius: 0;
+  transition: 0.4s;
+  border: 1px solid #0dcaf0;
+}
+.Booking form #submit:hover {
+  background-color: transparent;
+  border-color: white;
+}
+.Booking form .prev {
+  text-decoration: underline !important;
+  display: block;
+  text-align: center;
+  color: black;
+}
+@media (max-width: 1400px) {
+  .Booking form .form-control,
+  .Booking form select {
+    margin: 17px;
+  }
+}
+@media (max-width: 1200px) {
+  .Booking .head {
+    font-size: 95px;
+    letter-spacing: 7px;
+  }
+  .Booking .desc {
+    font-size: 18px;
+  }
+  .Booking form .form-control,
+  .Booking form select {
+    width: 46%;
+  }
+}
+@media (max-width: 992px) {
+  .Booking {
+    height: 1080px;
+    background-position-x: 48%;
+  }
+  .Booking .overlay {
+    background-color: rgba(0, 195, 255, 0.5215686275);
+  }
+  .Booking .head {
+    font-size: 107px;
+    line-height: 1;
+    letter-spacing: 10px;
+    margin-top: 10px;
+  }
+  .Booking form {
+    padding: 15px;
+  }
+  .Booking form .form-control,
+  .Booking form select {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .Booking .desc {
+    margin-top: 21px;
+    font-size: 14px;
+  }
+}
+
+.Appointment {
+  background-color: #01d5ed;
+  padding: 40px 0;
+  text-align: center;
+  height: 980px;
+  color: white;
+}
+.Appointment form {
+  background-color: rgba(255, 255, 255, 0.596);
+  margin-top: 30px;
+  width: 50%;
+  margin: 30px auto;
+  padding: 40px;
+}
+.Appointment .head {
+  letter-spacing: 4px;
+  font-size: 72px;
+  margin-top: 50px;
+}
+.Appointment .form-control {
+  display: block;
+  height: 55px;
+  margin: 20px auto;
+}
+.Appointment .header {
+  width: 60%;
+  margin: 30px auto;
+}
+.Appointment .content {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 992px) {
+  .Appointment form {
+    width: 100%;
+  }
+  .Appointment .container {
+    max-width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .Appointment form {
+    padding: 15px;
+  }
+  .Appointment .head {
+    font-size: 45px;
+  }
+}
+
+.modal-dialog {
+  position: relative;
+}
+.modal-dialog .modal-header i {
+  position: absolute;
+  right: 15px;
+  font-size: 27px;
+}/*# sourceMappingURL=index.css.map */

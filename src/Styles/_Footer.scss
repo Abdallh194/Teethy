@@ -1,0 +1,80 @@
+.Footer {
+  background-color: #70bfd7;
+  color: white;
+  padding: 40px 0 15px 0;
+  .head {
+    font-family: $header-font;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .icon {
+    margin: 10px 0;
+    display: flex;
+
+    .details {
+      margin-left: 10px;
+    }
+  }
+  .socials {
+    display: flex;
+    i {
+      width: 40px;
+      height: 40px;
+      border: 1px solid;
+      text-align: center;
+      font-size: 22px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 13px;
+      transition: 0.3s;
+      &:hover {
+        background-color: white;
+        color: $aqua-color;
+      }
+    }
+  }
+  ul {
+    margin-left: -14px;
+    li {
+      padding: 2px 0px;
+      cursor: pointer;
+      transition: 0.4s;
+      &:hover {
+        letter-spacing: 1px;
+        color: black;
+      }
+    }
+  }
+  .inputs {
+    position: relative;
+    margin-top: 20px;
+    .form-control {
+      height: 60px;
+    }
+    button {
+      position: absolute;
+      top: 8px;
+      right: 10px;
+      height: 42px;
+    }
+  }
+  i {
+    color: white;
+  }
+  .copy {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media (max-width: 767px) {
+    .foot-box {
+      margin: 20px 0;
+    }
+    .copy {
+      text-align: center;
+      line-height: 2;
+      display: block;
+    }
+  }
+}

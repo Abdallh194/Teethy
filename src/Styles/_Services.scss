@@ -1,0 +1,74 @@
+.Services {
+  padding: 50px 0;
+  margin-top: 70px;
+  .serv-box {
+    background-color: #eff5ff;
+    margin: 10px auto;
+    width: calc(100% / 3 - 20px);
+    border-radius: 5px;
+    padding: 40px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.35s;
+    .head {
+      font-size: 26px;
+      padding: 10px 0;
+      letter-spacing: 1px;
+    }
+
+    i {
+      font-size: 33px;
+      color: $aqua-color;
+    }
+    .desc {
+      color: #0000008a;
+    }
+    .more {
+      font-family: $header-font;
+      width: 40px;
+      height: 40px;
+      padding: 0.375rem 0.75rem;
+      display: inline-flex;
+      align-items: center;
+      background: #ffffff;
+      border-radius: 40px;
+      white-space: nowrap;
+      overflow: hidden;
+      margin-top: 20px;
+      transition: 0.5s;
+      .plus {
+        margin-right: 1rem !important;
+        font-size: 27px;
+        color: $aqua-color;
+      }
+    }
+    &:hover {
+      box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
+      transform: translateY(-10px);
+      .more {
+        width: 140px;
+      }
+    }
+  }
+  .header {
+    font-size: 37px;
+    letter-spacing: 6px;
+    text-align: center;
+    margin: 20px 0;
+  }
+  @media (max-width: 992px) {
+    .serv-box {
+      width: calc(100% / 2 - 20px);
+    }
+  }
+  @media (max-width: 767px) {
+    margin-top: 0;
+    .serv-box {
+      width: calc(100% - 40px);
+    }
+    .header {
+      font-size: 25px;
+      letter-spacing: 3px;
+    }
+  }
+}

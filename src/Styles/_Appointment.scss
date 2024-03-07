@@ -1,0 +1,48 @@
+.Appointment {
+  background-color: $aqua-color;
+  padding: 40px 0;
+  text-align: center;
+  height: 980px;
+  color: white;
+  form {
+    background-color: rgba(255, 255, 255, 0.596);
+    margin-top: 30px;
+    width: 50%;
+    margin: 30px auto;
+    padding: 40px;
+  }
+  .head {
+    letter-spacing: 4px;
+    font-size: 72px;
+    margin-top: 50px;
+  }
+  .form-control {
+    display: block;
+    height: 55px;
+    margin: 20px auto;
+  }
+  .header {
+    width: 60%;
+    margin: 30px auto;
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+  }
+  @media (max-width: 992px) {
+    form {
+      width: 100%;
+    }
+    .container {
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 767px) {
+    form {
+      padding: 15px;
+    }
+    .head {
+      font-size: 45px;
+    }
+  }
+}

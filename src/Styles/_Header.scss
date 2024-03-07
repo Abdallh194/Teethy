@@ -1,0 +1,131 @@
+.Header {
+  padding-top: 15px;
+
+  .logo {
+    position: relative;
+    font-size: 40px;
+    .img {
+      width: 130px;
+    }
+    .head {
+      font-family: $header-font;
+      color: white;
+    }
+    .sub-head {
+      position: absolute;
+      bottom: 3px;
+      right: -25px;
+      font-family: $subHeader-font;
+    }
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    a {
+      color: white;
+      font-size: 20px;
+      margin-left: 50px;
+      text-transform: uppercase;
+    }
+    .nav-link {
+      position: relative;
+      overflow: hidden;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        transition: 0.2s;
+        height: 7px;
+        background-color: white;
+        bottom: -4px;
+        left: -105%;
+      }
+      &:hover {
+        &::before {
+          left: 0%;
+        }
+      }
+    }
+  }
+  .active {
+    display: inline-block;
+    position: relative;
+    span {
+      position: relative;
+      z-index: 1;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: $aqua-color;
+      width: 120px;
+      height: 149px;
+      left: -28px;
+      top: -77px;
+    }
+  }
+  .callUs {
+    font-family: $header-font;
+    text-align: right;
+    font-size: 28px;
+    color: white;
+    .num {
+      color: black;
+      margin-top: -12px;
+    }
+  }
+  @media (max-width: 1200px) {
+    .logo {
+      .img {
+        width: 74px;
+      }
+      .head {
+        font-size: 32px;
+      }
+      .sub-head {
+        bottom: -17px;
+        right: -17px;
+        font-size: 32px;
+      }
+    }
+    .callUs {
+      font-size: 23px;
+    }
+    .menu {
+      a {
+        font-size: 17px;
+      }
+      .active {
+        &::before {
+          width: 97px;
+          height: 149px;
+          left: -18px;
+          top: -91px;
+        }
+      }
+    }
+  }
+  @media (max-width: 900px) {
+    .menu {
+      display: none;
+    }
+  }
+  @media (max-width: 575px) {
+    .logo {
+      .head {
+        position: relative;
+        top: -10px;
+      }
+      .sub-head {
+        bottom: -6px;
+      }
+    }
+    .callUs {
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+//fonts
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"); //main font
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap"); //subheader font
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"); //icons
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+////
+///
+///
+///
+///
+// vars
+$aqua-color: #01d5ed;
+$subHeader-font: "Pacifico";
+$main-font: "Montserrat";
+$header-font: "IBM Plex Sans";
+body {
+  font-family: $main-font;
+  font-weight: bold;
+  color: black;
+}
+.navbar {
+  justify-content: space-between;
+}
+a {
+  text-decoration: none !important;
+}

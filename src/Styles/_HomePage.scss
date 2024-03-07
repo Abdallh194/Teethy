@@ -1,0 +1,338 @@
+.HomePage {
+  height: 100vh;
+  background-color: #70bfd7;
+  position: relative;
+  overflow: hidden;
+  .container {
+    max-width: 1740px;
+  }
+  .rows {
+    margin-top: 80px;
+    .lf-box {
+      .top-head {
+        font-size: 36px;
+        margin-left: 20px;
+        letter-spacing: 10px;
+      }
+      .head {
+        font-family: $header-font;
+        font-size: 210px;
+        line-height: 0.8;
+      }
+      .cus-mg {
+        letter-spacing: 38px;
+        font-size: 231px;
+      }
+      .btm-head {
+        font-family: $subHeader-font;
+        font-size: 120px;
+        color: white;
+        transform: rotate(-19deg);
+        margin-top: -114px;
+        margin-left: 180px;
+      }
+      .location {
+        display: flex;
+        align-items: center;
+        margin-top: 100px;
+        .bi {
+          color: white;
+        }
+        .geo {
+          font-size: 23px;
+          letter-spacing: 5px;
+          margin-left: 7px;
+        }
+      }
+    }
+    .right-box {
+      position: relative;
+      padding-right: 44px;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 310px;
+        height: 310px;
+        right: -29%;
+        top: -12%;
+        background-color: $aqua-color;
+        border-radius: 50%;
+        z-index: 0;
+      }
+      .line {
+        width: 57%;
+        height: 3px;
+        position: relative;
+        right: -43%;
+        margin: 18px 0;
+        background-color: black;
+      }
+      text-align: right;
+      font-family: $header-font;
+      .top-head {
+        position: relative;
+        z-index: 0;
+        line-height: 1.1;
+      }
+      .st {
+        font-size: 40px;
+      }
+      .sec {
+        font-size: 78px;
+      }
+      .head {
+        font-size: 150px;
+        line-height: 0.9;
+        color: white;
+        position: relative;
+      }
+      .cus-mg {
+        letter-spacing: 16px;
+      }
+      .socials {
+        margin-top: 65px;
+        i {
+          font-size: 25px;
+          color: white;
+          display: inline-block;
+          margin-left: 29px;
+        }
+        .desc {
+          font-size: 24px;
+          font-family: $main-font;
+        }
+      }
+    }
+    .center-box {
+      position: relative;
+      .circle {
+        position: absolute;
+        content: "";
+        width: 550px;
+        height: 550px;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        background-color: white;
+        z-index: 0;
+      }
+      img {
+        position: relative;
+        z-index: 1;
+        display: block;
+        margin: 10px auto;
+        margin-top: -45px;
+      }
+    }
+  }
+  @media (max-width: 1650px) {
+    .rows {
+      .lf-box {
+        .head {
+          font-size: 150px;
+        }
+        .btm-head {
+          font-size: 100px;
+          margin-top: -57px;
+          margin-left: 104px;
+        }
+        .top-head {
+          font-size: 27px;
+          letter-spacing: 6px;
+        }
+        .location .geo {
+          font-size: 19px;
+          letter-spacing: 1px;
+          margin-left: 7px;
+        }
+        .cus-mg {
+          letter-spacing: 38px;
+        }
+      }
+      .center-box {
+        .circle {
+          width: 400px;
+          height: 400px;
+        }
+        img {
+          width: 90%;
+        }
+      }
+      .right-box {
+        .head {
+          font-size: 130px;
+        }
+        .sec {
+          font-size: 70px;
+        }
+        .line {
+          width: 78%;
+          right: -21%;
+        }
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .rows {
+      .lf-box {
+        .head {
+          font-size: 107px;
+        }
+        .btm-head {
+          font-size: 59px;
+          margin-top: -44px;
+          margin-left: 116px;
+        }
+        .cus-mg {
+          letter-spacing: 23px;
+        }
+        .top-head {
+          font-size: 17px;
+        }
+        .location {
+          .geo {
+            font-size: 15px;
+            letter-spacing: 0px;
+          }
+          .bi {
+            width: 27px;
+          }
+        }
+      }
+      .right-box {
+        padding-right: calc(var(--bs-gutter-x) * 0.5);
+        .st {
+          font-size: 23px;
+        }
+        .sec {
+          font-size: 40px;
+        }
+        .head {
+          font-size: 96px;
+        }
+        .line {
+          width: 71%;
+          right: -28%;
+        }
+        .cus-mg {
+          letter-spacing: 11px;
+        }
+        .socials {
+          margin-top: 40px;
+          .desc {
+            font-size: 17px;
+          }
+          i {
+            font-size: 19px;
+          }
+        }
+      }
+      .center-box .circle {
+        width: 350px;
+        height: 350px;
+      }
+    }
+  }
+  @media (max-width: 920px) {
+    .rows {
+      .lf-box {
+        .head {
+          font-size: 82px;
+        }
+        .btm-head {
+          font-size: 45px;
+          margin-top: -33px;
+          margin-left: 90px;
+        }
+        .cus-mg {
+          letter-spacing: 18px;
+        }
+      }
+      .center-box .circle {
+        width: 300px;
+        height: 300px;
+      }
+      .right-box {
+        .head {
+          font-size: 76px;
+        }
+        .cus-mg {
+          letter-spacing: 8px;
+        }
+        &::before {
+          width: 220px;
+          height: 220px;
+          top: -16%;
+        }
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    height: fit-content;
+    .rows {
+      text-align: center;
+      margin-top: 57px;
+      .lf-box {
+        .head {
+          font-size: 160px;
+        }
+        .btm-head {
+          font-size: 68px;
+          margin-top: -46px;
+          margin-left: 144px;
+        }
+        .location {
+          display: none;
+        }
+      }
+      .center-box {
+        img {
+          width: 60%;
+          margin-top: 30px;
+        }
+        .circle {
+          width: 350px;
+          height: 350px;
+          top: 57%;
+        }
+      }
+      .right-box {
+        text-align: center;
+        margin-top: 20px;
+        .st {
+          font-size: 28px;
+        }
+        .sec {
+          font-size: 57px;
+        }
+        .head {
+          font-size: 155px;
+        }
+        .top-head {
+          width: 53%;
+          margin: 10px auto;
+          text-align: right;
+        }
+        .line {
+          width: 100%;
+          right: 0;
+        }
+        &::before {
+          width: 350px;
+          height: 350px;
+          top: -5%;
+        }
+        .socials {
+          margin-bottom: 15px;
+          i {
+            font-size: 28px;
+          }
+          .desc {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+}

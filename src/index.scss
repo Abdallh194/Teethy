@@ -1,0 +1,22 @@
+@import "bootstrap/dist/css/bootstrap.css"; //bootstrap
+@import "Styles/Global";
+@import "Styles/Header";
+@import "Styles/HomePage";
+@import "Styles/About";
+@import "Styles/Why";
+@import "Styles/Services";
+@import "Styles/Doctors";
+@import "Styles/Contact";
+@import "Styles/Footer";
+@import "Styles/Booking";
+@import "Styles/Appointment";
+.modal-dialog {
+  position: relative;
+  .modal-header {
+    i {
+      position: absolute;
+      right: 15px;
+      font-size: 27px;
+    }
+  }
+}

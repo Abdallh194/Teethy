@@ -1,0 +1,74 @@
+.Doctors {
+  padding: 40px 0;
+  margin-top: 50px;
+  .header {
+    font-size: 37px;
+    letter-spacing: 6px;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .doc-box {
+    width: calc(100% / 4 - 20px);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 0;
+    margin: 10px auto;
+    transition: 0.5s;
+    img {
+      display: block;
+      transition: 0.5s;
+      position: relative;
+      top: 0;
+    }
+    .details {
+      background-color: #eff5ff;
+      text-align: center;
+      padding: 30px;
+      transition: 0.5s;
+      height: 100px;
+      position: relative;
+      z-index: 1;
+      .socials {
+        margin-top: 10px;
+      }
+      i {
+        text-align: center;
+        margin-right: 10px;
+        font-size: 1.1rem;
+      }
+      .name {
+        font-family: $header-font;
+        font-size: 1.25rem;
+        letter-spacing: 2px;
+      }
+      .dep {
+        color: $aqua-color;
+        padding: 5px 0;
+      }
+    }
+    &:hover {
+      img {
+        transform: translateY(-20px);
+      }
+      .details {
+        margin-top: -60px;
+        height: 160px;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    .doc-box {
+      width: calc(100% / 2 - 20px);
+    }
+  }
+  @media (max-width: 767px) {
+    margin-top: 0;
+    .doc-box {
+      width: calc(100% - 40px);
+    }
+    .header {
+      font-size: 25px;
+      letter-spacing: 3px;
+    }
+  }
+}
