@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Teethy/static/css/main.93008dbe.css",
+    "main.js": "/Teethy/static/js/main.8b88b836.js",
+    "static/media/home.png": "/Teethy/static/media/home.89812dddc56fa650a8cd.png",
+    "static/media/teeth.png": "/Teethy/static/media/teeth.83548ba4e48ee9cc4001.png",
+    "static/media/about-bg.png": "/Teethy/static/media/about-bg.85d72d306d093d69e946.png",
+    "static/media/home-bg.jpg": "/Teethy/static/media/home-bg.f65056e3372b7f293f78.jpg",
+    "static/media/why.jpg": "/Teethy/static/media/why.ac2273d9562aac4d928a.jpg",
+    "static/media/team-4.jpg": "/Teethy/static/media/team-4.94f7535f4325a61f1d3c.jpg",
+    "static/media/team-3.jpg": "/Teethy/static/media/team-3.14b2d97b0ef8c13ecfae.jpg",
+    "static/media/team-2.jpg": "/Teethy/static/media/team-2.a63efb7e6f06d0d92d20.jpg",
+    "static/media/team-1.jpg": "/Teethy/static/media/team-1.fc890e2464aaae6df75a.jpg",
+    "index.html": "/Teethy/index.html",
+    "main.93008dbe.css.map": "/Teethy/static/css/main.93008dbe.css.map",
+    "main.8b88b836.js.map": "/Teethy/static/js/main.8b88b836.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93008dbe.css",
+    "static/js/main.8b88b836.js"
+  ]
+}
